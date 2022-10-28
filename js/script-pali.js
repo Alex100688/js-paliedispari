@@ -12,7 +12,7 @@ const ask=prompt("Inserisci la parola");
 
 function arrayListReverse(parolaNuova, ask){
   for(let i=parolaNuova.length -1; i >= 0; i--) {
-    if ([i] === ask) {
+    if (parolaNuova[i] === ask) {
         return true;
         
     }        
@@ -21,4 +21,4 @@ function arrayListReverse(parolaNuova, ask){
 } 
 
 
-console.log(arrayListReverse);
+console.log(arrayListReverse(ask));
