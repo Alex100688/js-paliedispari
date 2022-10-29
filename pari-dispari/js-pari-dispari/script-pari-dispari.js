@@ -11,6 +11,10 @@ function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + min)+min);
 }
 
-const chiedi=getRndInteger(1,5);
-console.log(chiedi);
 
+const numeroGiocatore=Number(prompt("Inserisci un numero da 1 a 5"));
+console.log(numeroGiocatore);
+const numeroComputer=getRndInteger(1,5);
+console.log(numeroComputer);
+const totale=numeroGiocatore+numeroComputer;
+console.log(totale);
