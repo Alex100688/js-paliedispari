@@ -22,10 +22,10 @@ console.log(numeroComputer);
 const totale=isEven(numeroGiocatore+numeroComputer);
 console.log(totale);
 
-if (numeroGiocatore=isEven==true) {
+if (isEven(numeroGiocatore)===true) {
     alert("Hai vinto");
 }
-else if(numeroComputer=isEven==true){
+else if(isEven(numeroGiocatore)===true){
    alert("Hai perso");
 }
 else{
