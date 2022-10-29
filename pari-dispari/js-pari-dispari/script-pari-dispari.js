@@ -6,6 +6,7 @@ function isEven(numbers) {
     }
     return false;
 }
+
 //funzione per avere un range di numeri interi//
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + min)+min);
@@ -18,3 +19,7 @@ const numeroComputer=getRndInteger(1,5);
 console.log(numeroComputer);
 const totale=numeroGiocatore+numeroComputer;
 console.log(totale);
+const verifica=isEven(totale);
+console.log(verifica);
+
+
