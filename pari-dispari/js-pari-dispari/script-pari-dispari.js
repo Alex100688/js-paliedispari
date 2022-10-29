@@ -13,13 +13,24 @@ function getRndInteger(min, max) {
 }
 
 
-const numeroGiocatore=Number(prompt("Inserisci un numero da 1 a 5"));
+do {
+    numeroGiocatore=Number(prompt("Devi scegliere un numero da 1 a 5"));
+} while (numeroGiocatore < 1 || numeroGiocatore > 5);
 console.log(numeroGiocatore);
-const numeroComputer=getRndInteger(1,5);
+let numeroComputer=getRndInteger(1,5);
 console.log(numeroComputer);
-const totale=numeroGiocatore+numeroComputer;
+const totale=isEven(numeroGiocatore+numeroComputer);
 console.log(totale);
-const verifica=isEven(totale);
-console.log(verifica);
+
+if (numeroGiocatore=isEven==true) {
+    alert("Hai vinto");
+}
+else if(numeroComputer=isEven==true){
+   alert("Hai perso");
+}
+else{
+    alert("Pareggio");
+}
+
 
 
