@@ -19,15 +19,17 @@ do {
 console.log(numeroGiocatore);
 let numeroComputer=getRndInteger(1,5);
 console.log(numeroComputer);
-const totale=isEven(numeroGiocatore+numeroComputer);
+let totale=(numeroGiocatore+numeroComputer);
 console.log(totale);
 
-if (isEven(numeroGiocatore)===true) {
+if(isEven(numeroGiocatore-totale)===true ) {
     alert("Hai vinto");
 }
-else if(isEven(numeroGiocatore)===true){
+
+else if(isEven(numeroComputer-totale)===true){
    alert("Hai perso");
 }
+
 else{
     alert("Pareggio");
 }
